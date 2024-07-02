@@ -3,9 +3,9 @@ import React from 'react'
 const Vechile = () => {
     return (
         <div className="bg-dark text-light main-container py-5" id="vechile">
-            <div className="container d-flex justify-content-between align-items-center">
+            <div className="container d-flex flex-wrap justify-content-between align-items-center">
                 <div className="vehicle-section-1">
-                    <div className="mb-4">
+                    <div className="mb-4 vehicle-sec-text">
                         <h1 className="heading-title">World Largest Car Brands Marketplace</h1>
                         <p className="paragraph">At our car marketplace, we bring you the best vechiles from top brands. Find the cars that suits your style.</p>
                         <ul>

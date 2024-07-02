@@ -27,7 +27,7 @@ const About = () => {
             <div className='mb-5 d-flex justify-content-between flex-wrap'>
                 <div className='about-wrapper-1'>
                     <div className='text-container'>
-                        <h1 className='heading-sub-title' style={{ fontSize: '45px' }}>We Are Dedicated to Provide Quality Services</h1>
+                        <h1 className='heading-sub-title'>We Are Dedicated to Provide Quality Services</h1>
                         <p className='paragraph mb-5'>At our marketplace, we bring you the best vehicles from top brands. Find the cars
                             that suits your style and budget
                         </p>
@@ -66,11 +66,11 @@ const About = () => {
                     
                 </div>
             </div>
-            <div className='car-logo-section d-flex justify-content-between'>
-                <img src='../../Assests/audi.png' alt='audi' />
-                <img src='../../Assests/bmw.svg' alt='audi' />
-                <img src='../../Assests/mercedes.svg' alt='audi' />
-                <img src='../../Assests/audi.png' alt='audi' />
+            <div className='car-logo-section d-flex flex-wrap justify-content-between'>
+                <img src='../../Assests/audi.png' alt='audi' className='mb-2' />
+                <img src='../../Assests/bmw.svg' alt='audi' className='mb-2' />
+                <img src='../../Assests/mercedes.svg' alt='audi' className='mb-2' />
+                <img src='../../Assests/audi.png' alt='audi' className='mb-2' />
             </div>
         </div>
     )

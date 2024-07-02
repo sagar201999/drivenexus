@@ -41,16 +41,15 @@ const Cars = () => {
     return (
         <div className='container text-center py-5'>
             <h2 className='heading-sub-title mb-4'>Explore Our Vehicles</h2>
-            <div className='d-flex justify-content-center'>
-            {/* key={index} style={boxStyle(index)} onClick={() => handleClick(index)} */}
-            {carTypes.map((items , index)=>(
-                <div id={index} className='d-flex align-items-center car-type-wrapper' style={boxStyle(index)} onClick={() => handleClick(index)}>
-                    <img src={items.logo} alt='logo' style={{width : '25px',height : 'auto',marginRight : '15px'}} />
-                    <span className='paragraph'>{items.name}</span>
-                </div>
-            ))}
+            <div className='d-flex flex-wrap justify-content-center'>
+                {carTypes.map((items, index) => (
+                    <div id={index} className='d-flex align-items-center car-type-wrapper' style={boxStyle(index)} onClick={() => handleClick(index)}>
+                        <img src={items.logo} alt='logo' style={{ width: '25px', height: 'auto', marginRight: '15px' }} />
+                        <span className='paragraph'>{items.name}</span>
+                    </div>
+                ))}
             </div>
-            <div className='d-flex justify-content-center'>
+            <div className='d-flex justify-content-center flex-wrap'>
                 <div className='car-model-wrapper'>
                     <img src='../../Assests/mercedes-1.png' alt='mercedes' className='mb-3' />
                     <div>

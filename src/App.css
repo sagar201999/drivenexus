@@ -55,6 +55,9 @@ html {
 .text-red {
   color: red;
 }
+.heading-title {
+  font-family: prompt-bold;
+}
 
 ul {
   padding-left: 0 !important;
@@ -70,14 +73,9 @@ a {
   text-decoration: none !important;
 }
 
-.heading-title {
-  font-family: prompt-bold;
-  font-size: 50px;
-}
 
 .heading-sub-title {
   font-family: prompt-semi-bold;
-  font-size: 35px;
 }
 
 .heading-sub-text {
@@ -127,18 +125,26 @@ a {
   position: relative;
 }
 
-.hero-section-1 {
-  width: 550px;
+.hero-container{
+  max-width: 85%;
+  margin: auto;
 }
 
-.hero-section-1 div h1 {
-  letter-spacing: 2px;
-  font-size: clamp(20px , 8vw , 45px);
+.hero-section-1 {
+  max-width: 40%;
+  width: 100%;
 }
+
+.hero-heading-title{
+  letter-spacing: 2px;
+  font-size: clamp(26px , 4vw, 45px);
+}
+
 
 .hero-section-1 div p {
   width: 408px;
 }
+
 
 .play {
   border: 1px solid red;
@@ -148,17 +154,24 @@ a {
   margin-right: 8px;
 }
 
+.hero-section-2 {
+  max-width: 60%;
+  width: 100%;
+
+}
 .hero-section-2 img {
-  width: 700px;
+  width: 95%;
   height: 320px;
   margin-left: 20px;
 }
 
 .search-container {
+  width: 85%;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 50%);
   box-shadow: 1px 1px 5px rgb(148, 148, 148);
+  padding: 20px;
 }
 
 .input-style {
@@ -175,7 +188,7 @@ input::placeholder {
 
 
 /* about */
-.about-container{
+.about-container {
   margin-top: 10rem;
 }
 
@@ -186,6 +199,10 @@ input::placeholder {
 
 .text-container {
   width: 34rem;
+}
+
+.text-container h1 {
+  font-size: clamp(20px, 8vw, 45px);
 }
 
 .about-wrapper-2 {
@@ -254,7 +271,7 @@ input::placeholder {
 
 /* cars */
 
-.car-type-wrapper{
+.car-type-wrapper {
   border: 1px solid black;
   padding: 8px 20px;
   margin: auto 10px;
@@ -279,48 +296,4 @@ input::placeholder {
   width: 30px;
   height: auto;
   margin: .5rem;
-}
-
-@media screen and (max-width: 576px) {
-
-  /* hero */
-  .hero-section-1 {width: 100%;}
-  .hero-section-1 div h1{text-align: center;}
-  .hero-section-1 div p{text-align: center;width: 100%;}
-  .hero-buttons{text-align: center;}
-  .hero-section-2 {width: 100%;margin-top: 30px;}
-  .hero-section-2 img{ width: 386px;height: auto;margin-left: 5px;}
-  .search-container{width: 350px !important; top: 65%; left: 50%;transform: translate(-50%, 50%);}
-  .search-container p {text-align: center;}
-  .input-style{width: 346px;margin-bottom: 10px;}
-
-
-  .about-wrapper-1 {
-    margin-bottom: 25px;
-  }
-
-  .heading-title {
-    font-size: 25px;
-  }
-
-  .text-container {
-    width: 25.5rem;
-    text-align: center;
-  }
-
-  .text-container h1 {
-    font-size: 25px;
-  }
-
-  .image-width {
-    width: 400px;
-    height: auto;
-  }
-
-  .features-tab {
-    width: 183px;
-  }
-
-.vehicle-section-2 img {width: 300px;}
-
 }
